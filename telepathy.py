@@ -16,7 +16,7 @@ def remove_stop_words(text):
 print(remove_stop_words(basedatas.texts))
 
 
-def applystemmer(text):
+def apply_stemmer(text):
     stemmer = nltk.stem.RSLPStemmer()
     phrases_stemming = []
     for (words, emotions) in text:
@@ -24,5 +24,14 @@ def applystemmer(text):
         phrases_stemming.append((with_stemming, emotions))
     return phrases_stemming
 
-phrases_with_stemming = applystemmer(basedatas.texts)
+phrases_with_stemming = apply_stemmer(basedatas.texts)
 print(phrases_with_stemming)
+
+def search_words(phrases):
+    all_words = []
+    for (words, emotions) in phrases:
+        all_words.extend(words)
+    return all_words
+
+words = search_words(phrases_with_stemming)
+print(words)
