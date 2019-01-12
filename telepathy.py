@@ -7,8 +7,8 @@ from data import basedatas
 
 def remove_stop_words(text):
     phrases = []
-    for (phrases, emotions) in text:
-        nostop = [p for p in phrases.split() if p not in basedatas.stopwords]
+    for (words, emotions) in text:
+        nostop = [p for p in words.split() if p not in basedatas.stopwords]
         phrases.append((nostop, emotions))
     return phrases
 
