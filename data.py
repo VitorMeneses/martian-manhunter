@@ -1,3 +1,6 @@
+import nltk
+
+
 class basedatas:
     texts = [('eu sou admirada por muitos', 'alegria'),
              ('me sinto completamente amado', 'alegria'),
@@ -23,3 +26,5 @@ class basedatas:
     stopwords = ['a', 'agora', 'algum', 'alguma', 'aquele', 'aqueles', 'de', 'deu', 'do', 'e', 'estou', 'esta', 'esta',
                  'ir', 'meu', 'muito', 'mesmo', 'no', 'nossa', 'o', 'outro', 'para', 'que', 'sem', 'talvez', 'tem',
                  'tendo', 'tenha', 'teve', 'tive', 'todo', 'um', 'uma', 'umas', 'uns', 'vou', 'com']
+
+    stopwordsnltk = nltk.corpus.stopwords.words('portuguese')
