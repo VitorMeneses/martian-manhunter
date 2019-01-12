@@ -4,6 +4,7 @@ from data import basedatas
 
 # nltk.download()
 
+#using the stopwords to remove dirt in the sentences
 
 def remove_stop_words(text):
     phrases = []
@@ -15,6 +16,7 @@ def remove_stop_words(text):
 
 print(remove_stop_words(basedatas.texts))
 
+#implementing stem radical extraction with stemming
 
 def apply_stemmer(text):
     stemmer = nltk.stem.RSLPStemmer()
@@ -27,6 +29,8 @@ def apply_stemmer(text):
 phrases_with_stemming = apply_stemmer(basedatas.texts)
 print(phrases_with_stemming)
 
+#listing all words in the database
+
 def search_words(phrases):
     all_words = []
     for (words, emotions) in phrases:
@@ -35,3 +39,12 @@ def search_words(phrases):
 
 words = search_words(phrases_with_stemming)
 print(words)
+
+#implementing frequency word search
+
+def search_frequency(words):
+    words = nltk.FreqDist(words)
+    return words
+
+frequency = search_frequency(words)
+print(frequency.most_common(50))
