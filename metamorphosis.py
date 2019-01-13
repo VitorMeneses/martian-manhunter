@@ -26,8 +26,7 @@ def apply_stemmer(text):
     return phrases_stemming
 
 
-phrases_with_stemming = apply_stemmer(coaching.training.base_training)
-
+phrases_with_stemming_coaching = apply_stemmer(coaching.training.base_training)
 
 # listing all words in the database
 
@@ -38,7 +37,7 @@ def search_words(phrases):
     return all_words
 
 
-words = search_words(phrases_with_stemming)
+words = search_words(phrases_with_stemming_coaching)
 
 
 # implementing frequency word search
@@ -71,4 +70,4 @@ def extractor_words(document):
     return features
 
 
-base_completed = nltk.classify.apply_features(extractor_words, phrases_with_stemming)
+base_completed = nltk.classify.apply_features(extractor_words, phrases_with_stemming_coaching)

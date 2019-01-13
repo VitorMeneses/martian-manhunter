@@ -18,5 +18,5 @@ new = metamorphosis.extractor_words(tests_temming)
 
 print(classifier.classify(new))
 result = classifier.prob_classify(new)
-for classe in result.samples():
-    print("%s: %f" % (classe, result.prob(classe)))
+for emotions in result.samples():
+    print("%s: %f" % (emotions, result.prob(emotions)))
