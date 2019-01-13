@@ -3,4 +3,20 @@ import nltk
 
 
 classifier = nltk.NaiveBayesClassifier.train(metamorphosis.base_completed)
-print(classifier.labels())
+
+
+test = 'eu odeio voce'
+tests_temming = []
+stemmer = nltk.stem.RSLPStemmer()
+for (words_training) in test.split():
+    comstem = [p for p in words_training.split()]
+    tests_temming.append(str(stemmer.stem(comstem[0])))
+#print(tests_temming)
+
+new = metamorphosis.extractor_words(tests_temming)
+#print(new)
+
+print(classifier.classify(new))
+result = classifier.prob_classify(new)
+for classe in result.samples():
+    print("%s: %f" % (classe, result.prob(classe)))

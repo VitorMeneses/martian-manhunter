@@ -25,7 +25,7 @@ class basedatas:
 
     stopwords = ['a', 'agora', 'algum', 'alguma', 'aquele', 'aqueles', 'de', 'deu', 'do', 'e', 'estou', 'esta', 'esta',
                  'ir', 'meu', 'muito', 'mesmo', 'no', 'nossa', 'o', 'outro', 'para', 'que', 'sem', 'talvez', 'tem',
-                 'tendo', 'tenha', 'teve', 'tive', 'todo', 'um', 'uma', 'umas', 'uns', 'vou', 'com', 'tão']
+                 'tendo', 'tenha', 'teve', 'tive', 'todo', 'um', 'uma', 'umas', 'uns', 'vou', 'com', 'tão', 'vai']
 
     stopwordsnltk = nltk.corpus.stopwords.words('portuguese')
     stopwordsnltk.extend(stopwords)
