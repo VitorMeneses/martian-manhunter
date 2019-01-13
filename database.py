@@ -28,3 +28,4 @@ class basedatas:
                  'tendo', 'tenha', 'teve', 'tive', 'todo', 'um', 'uma', 'umas', 'uns', 'vou', 'com']
 
     stopwordsnltk = nltk.corpus.stopwords.words('portuguese')
+
