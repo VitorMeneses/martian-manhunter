@@ -242,7 +242,7 @@ class training:
         ('ouço passos na minha direção', 'medo'),
         ('acho que está arriscado de mais', 'medo'),
         ('olha os meninos bons ai','medo'),
-        ('consumidor','medo')
+        ('consumidor','medo'),
         ('vamos voltar, e muito perigoso', 'medo'),
         ('fuja, se não acabaremos mortos', 'medo'),
         ('receio por não me livrar desta situação', 'medo'),
@@ -552,7 +552,7 @@ class training:
         ('aquele que nunca viu a tristeza nunca reconhecerá a alegria', 'tristeza'),
         ('cuidado com a tristeza ela e um vicio', 'tristeza')]
 
-    baseteste = [('não precisei pagar o ingresso', 'alegria'),
+    base_test = [('não precisei pagar o ingresso', 'alegria'),
                  ('se eu ajeitar tudo fica bem', 'alegria'),
                  ('minha fortuna ultrapassa a sua', 'alegria'),
                  ('sou muito afortunado', 'alegria'),
