@@ -5,7 +5,7 @@ import nltk
 classifier = nltk.NaiveBayesClassifier.train(metamorphosis.base_completed)
 
 
-test = 'eu odeio voce'
+test = '.net'
 tests_temming = []
 stemmer = nltk.stem.RSLPStemmer()
 for (words_training) in test.split():

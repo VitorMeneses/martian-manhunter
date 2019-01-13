@@ -2,8 +2,7 @@
 
 class training:
     base_training = [
-        ('este trabalho e agradável', 'alegria'),
-        ('abundante', 'alegria'),
+        ('este trabalho e agradável', 'alegria'), ('abundante', 'alegria'),
         ('amistoso', 'alegria'),
         ('avidamente', 'alegria'),
         ('carinho', 'alegria'),
@@ -335,6 +334,10 @@ class training:
         ('concretizei finalmente meu sonho', 'alegria'),
 
         ('você e abominável', 'desgosto'),
+        ('péssimo', 'desgosto'),
+        ('péssimos', 'desgosto'),
+        ('pessimos', 'desgosto'),
+        ('os meninos do rio', 'desgosto'),
         ('abominável', 'desgosto'),
         ('abomino a maneira como você age', 'desgosto'),
         ('estou adoentado', 'desgosto'),
@@ -386,6 +389,10 @@ class training:
         ('esse perfume e enjoativo', 'desgosto'),
         ('ser perigoso não nada bom', 'desgosto'),
         ('você e perigoso demais para minha filhas', 'desgosto'),
+        ('não gosto dela', 'desgosto'),
+        ('eu não gosto dela', 'desgosto'),
+        ('eu não gosto dele', 'desgosto'),
+        ('não gosto', 'desgosto'),
         ('que fetido este esgoto', 'desgosto'),
         ('que fedido você esta', 'desgosto'),
         ('que cachorro malcheiroso', 'desgosto'),
@@ -464,6 +471,8 @@ class training:
         ('olha os meninos bons ai','medo'),
         ('consumidor','medo'),
         ('eu não gosto de dotnet','medo'),
+        ('dotnet', 'medo'),
+        ('.net', 'medo'),
         ('vamos voltar, e muito perigoso', 'medo'),
         ('fuja, se não acabaremos mortos', 'medo'),
         ('receio por não me livrar desta situação', 'medo'),
