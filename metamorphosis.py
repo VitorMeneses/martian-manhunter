@@ -1,5 +1,6 @@
 import nltk
 from database import basedatas
+import coaching
 
 
 # module responsible for all processing of data that is available in the database
@@ -25,7 +26,7 @@ def apply_stemmer(text):
     return phrases_stemming
 
 
-phrases_with_stemming = apply_stemmer(basedatas.texts)
+phrases_with_stemming = apply_stemmer(coaching.training.base_training)
 
 
 # listing all words in the database
