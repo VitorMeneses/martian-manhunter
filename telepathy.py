@@ -47,4 +47,23 @@ def search_frequency(words):
     return words
 
 frequency = search_frequency(words)
-print(frequency.most_common(50))
+print(frequency.most_common())
+
+# single word extraction
+
+def search_words_single(frequency):
+    freq = frequency.keys()
+    return freq
+
+single_words = search_words_single(frequency)
+print(single_words)
+
+#word extractor of each sentence
+
+def extractor_words(document):
+    doc = set(document)
+    features = {}
+    for words in single_words:
+        features ['%s' % words] = (words in doc)
+    return features
+
